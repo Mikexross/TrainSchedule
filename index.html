@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Scheduler</title>
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <!-- link to firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <!-- bootstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <!-- style links -->
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
 
 <body>
@@ -52,19 +53,19 @@
                         <form>
                             <div class="form-group">
                                 <label for="name">Train Name</label>
-                                <input type="input" class="form-control" id="name" placeholder="Enter Train Name">
+                                <input type="text" class="form-control" id="name" placeholder="Enter Train Name">
                             </div>
                             <div class="form-group">
                                 <label for="destination">Destination</label>
-                                <input type="input" class="form-control" id="destination" placeholder="Enter Destination Name">
+                                <input type="text" class="form-control" id="destination" placeholder="Enter Destination Name">
                             </div>
                             <div class="form-group">
                                 <label for="time">First Train Time (HH:mm - military time)</label>
-                                <input type="input" class="form-control" id="time" placeholder="Enter First Departure Time (HH:mm - military time)">
+                                <input type="text" class="form-control" id="time" placeholder="Enter First Departure Time (HH:mm - military time)">
                             </div>
                             <div class="form-group">
                                 <label for="frequency">Frequrency(min)</label>
-                                <input type="input" class="form-control" id="frequency" placeholder="Enter Minutes">
+                                <input type="text" class="form-control" id="frequency" placeholder="Enter Minutes">
                             </div>
                             <button type="submit" class="btn btn-primary" id="submit">Submit</button>
                         </form>
@@ -73,7 +74,12 @@
             </div>
         </div>
     </div>
-    <script src="./assets/logic.js"></script>
+
+    <!-- javascript, jquery, moment.js links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="./assets/logic.js"></script>
 </body>
 
 </html>
